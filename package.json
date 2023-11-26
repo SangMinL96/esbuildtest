@@ -2,7 +2,6 @@
   "name": "esbuildtest",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,6 +14,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "node esbuild-config/client.dev.mjs",
     "start": "vite",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -42,9 +42,10 @@
     "@vitejs/plugin-react": "^4.2.0",
     "classnames": "^2.3.2",
     "dotenv": "^16.0.2",
-    "esbuild": "^0.15.7",
+    "esbuild": "^0.19.2",
     "esbuild-plugin-svg": "^0.1.0",
     "esbuild-plugin-svgr": "^2.1.0",
+    "esbuild-sass-plugin": "^2.16.0",
     "fs-extra": "^10.1.0",
     "live-server": "^1.2.2",
     "node-sass": "^9.0.0",
