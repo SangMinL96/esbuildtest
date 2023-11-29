@@ -12,28 +12,40 @@ const root = process.cwd();
 
 try {
 	ctx = await esbuild.context({
+		
 		entryPoints: ['src/index.jsx'],
 		bundle: true,
 		minify: false,
-		sourcemap: true,
 		format: "esm",
 		loader: { '.svg': 'text', ".module.scss": "local-css", ".png": "dataurl" },
 		outfile: 'public/static/bundle.js',
 		plugins: [svgrPlugin(), {
-			name: "esbuild-replace",
+			name: "esbuild-url-replace",
 			setup: (build) => {
-				build.onLoad({ filter: /.scss/ }, async (args) => {
+				build.onLoad({ filter: /.module.scss/ }, async (args) => {
 					let content = await fs.promises.readFile(args.path, 'utf8')
-					content = content.replace(/[/]public/, path.resolve(root, "public"))
-					content = content.replace(/app/, path.resolve(root, "src/components"))
+					content = content.replace(/[/]public/g, path.resolve(root, "public"))
+					content = content.replace(/@import ['"]app/, `@import '${path.resolve(root, "src/components")}`)
 					content = content.replace(/\/\/.*/g, '');
-					console.log(content)
 					return { contents: content, loader: "local-css" }
 				})
 			}
-		}],
+		},
+			// {
+			// 	name: "esbuild-html-module",
+			// 	setup: (build) => {
+			// 		build.onLoad({ filter: /.jsx/ }, async (args) => {
+			// 			let content = await fs.promises.readFile(args.path, 'utf8')
+			// 			const fileName = args.path.match(/\/([^/]+)\.jsx$/)?.[1];
+			// 			content = content.replace(/(?:classs|cx)\("([^"]+)"\)/g, `classs("${fileName}_module_$1")`);
+			// 			console.log(content)
+			// 			return { contents: content, loader: "jsx" }
+			// 		})
+			// 	}
+			// }
+		],
 		define: {
-			'process.env.NODE_ENV': "'development'"
+			'process.env.NODE_ENV': "'production'"
 		}
 	});
 

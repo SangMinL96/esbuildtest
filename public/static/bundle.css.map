@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "sources": ["../../src/components/Test.module.scss"],
-  "sourcesContent": ["\n.test_sangmin{color:red;\n\n\n}"],
-  "mappings": ";AACA,CAACA;AAAa,SAAM;AAGpB;",
-  "names": ["test_sangmin"]
+  "sources": ["../../src/components/Test2.module.scss", "../../src/components/Test.module.scss"],
+  "sourcesContent": ["\n.test_sangmin{color:red}\n.test{background:url(\"/Users/sangminl96/Documents/workspace/esbuildtest/public/logo192.png\")}\n.test22asdf{background:url(\"/Users/sangminl96/Documents/workspace/esbuildtest/public/logo192.png\")}", "@import '/Users/sangminl96/Documents/workspace/esbuildtest/src/components/Test2.module.scss';\n.test_sangmin{color:red\n\n\n}"],
+  "mappings": ";AACA,CAACA;AAAa,SAAM;AAAG;AACvB,CAACC;AAAK,cAAW;AAA2E;AAC5F,CAACC;AAAW,cAAW;AAA2E;;;ACFlG,CAACC;AAAa,SAAM;AAGpB;",
+  "names": ["test_sangmin", "test", "test22asdf", "test_sangmin"]
 }
