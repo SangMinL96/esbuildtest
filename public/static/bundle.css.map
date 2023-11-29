@@ -1,7 +1,7 @@
 {
   "version": 3,
   "sources": ["../../src/components/Test.module.scss"],
-  "sourcesContent": [".test{color:red}"],
-  "mappings": ";AAAA,CAAA;AAAM,SAAA;;",
-  "names": []
+  "sourcesContent": ["\n.test_sangmin{color:red;\n\n\n}"],
+  "mappings": ";AACA,CAACA;AAAa,SAAM;AAGpB;",
+  "names": ["test_sangmin"]
 }
