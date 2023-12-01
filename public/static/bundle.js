@@ -323,12 +323,12 @@ var require_react_production_min = __commonJS({
 
 // node_modules/react/index.js
 var require_react = __commonJS({
-  "node_modules/react/index.js"(exports, module) {
+  "node_modules/react/index.js"(exports, module2) {
     "use strict";
     if (true) {
-      module.exports = require_react_production_min();
+      module2.exports = require_react_production_min();
     } else {
-      module.exports = null;
+      module2.exports = null;
     }
   }
 });
@@ -606,12 +606,12 @@ var require_scheduler_production_min = __commonJS({
 
 // node_modules/scheduler/index.js
 var require_scheduler = __commonJS({
-  "node_modules/scheduler/index.js"(exports, module) {
+  "node_modules/scheduler/index.js"(exports, module2) {
     "use strict";
     if (true) {
-      module.exports = require_scheduler_production_min();
+      module2.exports = require_scheduler_production_min();
     } else {
-      module.exports = null;
+      module2.exports = null;
     }
   }
 });
@@ -7760,7 +7760,7 @@ var require_react_dom_production_min = __commonJS({
 
 // node_modules/react-dom/index.js
 var require_react_dom = __commonJS({
-  "node_modules/react-dom/index.js"(exports, module) {
+  "node_modules/react-dom/index.js"(exports, module2) {
     "use strict";
     function checkDCE() {
       if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ === "undefined" || typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE !== "function") {
@@ -7777,9 +7777,9 @@ var require_react_dom = __commonJS({
     }
     if (true) {
       checkDCE();
-      module.exports = require_react_dom_production_min();
+      module2.exports = require_react_dom_production_min();
     } else {
-      module.exports = null;
+      module2.exports = null;
     }
   }
 });
@@ -7817,7 +7817,7 @@ var require_client = __commonJS({
 
 // node_modules/classnames/index.js
 var require_classnames = __commonJS({
-  "node_modules/classnames/index.js"(exports, module) {
+  "node_modules/classnames/index.js"(exports, module2) {
     (function() {
       "use strict";
       var hasOwn = {}.hasOwnProperty;
@@ -7852,9 +7852,9 @@ var require_classnames = __commonJS({
         }
         return classes.join(" ");
       }
-      if (typeof module !== "undefined" && module.exports) {
+      if (typeof module2 !== "undefined" && module2.exports) {
         classNames2.default = classNames2;
-        module.exports = classNames2;
+        module2.exports = classNames2;
       } else if (typeof define === "function" && typeof define.amd === "object" && define.amd) {
         define("classnames", [], function() {
           return classNames2;
@@ -7957,3 +7957,4 @@ classnames/index.js:
   	http://jedwatson.github.io/classnames
   *)
 */
+//# sourceMappingURL=bundle.js.map

@@ -12,13 +12,15 @@ const root = process.cwd();
 
 try {
 	ctx = await esbuild.context({
-		
 		entryPoints: ['src/index.jsx'],
 		bundle: true,
 		minify: false,
+		sourcemap: true,
 		format: "esm",
+		outExtension:{".js":".mjs"},
 		loader: { '.svg': 'text', ".module.scss": "local-css", ".png": "dataurl" },
 		outfile: 'public/static/bundle.js',
+		write: true,
 		plugins: [svgrPlugin(), {
 			name: "esbuild-url-replace",
 			setup: (build) => {
