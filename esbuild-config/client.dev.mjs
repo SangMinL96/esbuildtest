@@ -17,7 +17,7 @@ try {
 		minify: false,
 		sourcemap: true,
 		format: "esm",
-		outExtension:{".js":".mjs"},
+		
 		loader: { '.svg': 'text', ".module.scss": "local-css", ".png": "dataurl" },
 		outfile: 'public/static/bundle.js',
 		write: true,
