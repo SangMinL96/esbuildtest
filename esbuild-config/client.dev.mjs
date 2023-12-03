@@ -20,7 +20,7 @@ try {
 		
 		loader: { '.svg': 'text', ".module.scss": "local-css", ".png": "dataurl" },
 		outfile: 'public/static/bundle.js',
-		write: true,
+		write: false,
 		plugins: [svgrPlugin(), {
 			name: "esbuild-url-replace",
 			setup: (build) => {
