@@ -16,7 +16,7 @@ try {
 		bundle: true,
 		minify: false,
 		sourcemap: true,
-		format: "esm",
+		format: "cjs",
 		
 		loader: { '.svg': 'text', ".module.scss": "local-css", ".png": "dataurl" },
 		outfile: 'public/static/bundle.js',
