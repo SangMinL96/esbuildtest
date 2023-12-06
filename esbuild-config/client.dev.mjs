@@ -15,7 +15,6 @@ try {
 		entryPoints: ['src/index.jsx'],
 		bundle: true,
 		minify: false,
-		sourcemap: true,
 		format: "cjs",
 		
 		loader: { '.svg': 'text', ".module.scss": "local-css", ".png": "dataurl" },
