@@ -14,7 +14,7 @@ try {
 	ctx = await esbuild.context({
 		entryPoints: ['src/index.jsx'],
 		bundle: true,
-		minify: false,
+		minify: true,
 		
 		loader: { '.svg': 'text', ".module.scss": "local-css", ".png": "dataurl" },
 		outfile: 'public/static/bundle.js',
