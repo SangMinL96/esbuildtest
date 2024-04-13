@@ -7,7 +7,7 @@ try {
 		entryPoints: ['src/server/server.ts'],
 		bundle: true,
 		sourcemap: true,
-		minify: false,
+		minify: true,
 		platform: 'node',
 		target: ['node18.6'],
 		packages: 'external',
