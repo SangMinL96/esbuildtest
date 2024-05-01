@@ -6,7 +6,7 @@ try {
 	ctx = await esbuild.context({
 		entryPoints: ['src/server/server.ts'],
 		bundle: true,
-		sourcemap: false,
+		sourcemap: true,
 		minify: false,
 		platform: 'node',
 		target: ['node18.6'],
