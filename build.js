@@ -19,7 +19,7 @@ const build = async () => {
     esbuild.build({
         entryPoints: ['src/index.jsx'],
         bundle: false,
-        minify: true,
+        minify: false,
         define: clientEnv,
         loader: { '.png': 'file', '.svg': 'file' },
         outfile: 'build/index.js',
