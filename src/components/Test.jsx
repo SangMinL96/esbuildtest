@@ -14,6 +14,9 @@ function V2() {
 function V2() {
   return <div></div>;
 }
+function V2() {
+  return <div></div>;
+}
 Test.V1 = V1;
 Test.V2 = V2;
 export default Test;
