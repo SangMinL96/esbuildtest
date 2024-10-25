@@ -1,5 +1,5 @@
 import React from "react";
-import Test from "./components/Test";
+import Test, { V1 } from "./components/Test";
 import logo from "./logo.svg";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-
+        <V1 />
         <a
           className="App-link"
           href="https://reactjs.org"
