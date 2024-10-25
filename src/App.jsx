@@ -12,6 +12,7 @@ function App() {
         </p>
         <V1 />
         <V2 />
+        <V2 />
         <a
           className="App-link"
           href="https://reactjs.org"
