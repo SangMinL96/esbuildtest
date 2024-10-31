@@ -8,9 +8,7 @@ function Test() {
 function V1() {
   return <div></div>;
 }
-function V2() {
-  return <div></div>;
-}
+
 
 
 Test.V1 = V1;
