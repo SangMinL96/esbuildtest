@@ -5,10 +5,6 @@ const classs = classNames.bind(style);
 function Test() {
   return <div className={classs("test_sangmin")}>Testddd</div>;
 }
-function V1() {
-  return <div></div>;
-}
-
 
 
 Test.V1 = V1;
