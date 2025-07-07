@@ -8,5 +8,5 @@ function Test() {
 
 
 Test.V1 = V1;
-Test.V2 = V2;
+// Test.V2 = V2;
 export default Test;
